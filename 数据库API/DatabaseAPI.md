@@ -325,7 +325,7 @@
         313  688777.SH  中控技术     软件服务  2020-11-24
         314  688787.SH  海天瑞声     软件服务  2021-08-13
 
-    [315 rows x 4 columns]
+      [315 rows x 4 columns]
       ```
 
   - query_calendar 查询交易日
@@ -362,11 +362,7 @@
     > 名称|类型|说明
     >----|----|----
     table_name|String|因子表名
-    freq|String|因子频率，freq (str): 频率信息:
-                                        <br>快照数据 :['tick','level1','level2']
-                                        <br>分钟数据 : ['m','min','minute']
-                                        <br>小时数据 : ['h','hour']
-                                        <br>日频数据 : ['d','daily','day']
+    freq|String|因子频率: <br>快照数据 :['tick','level1','level2'] <br>分钟数据 : ['m','min','minute'] <br>小时数据 : ['h','hour'] <br>日频数据 : ['d','daily','day']
     description|String|因子描述
 
     代码样例
@@ -397,7 +393,7 @@
     - 参数
     > 名称|类型|说明
     >----|----|----
-    df|dataframe|因子数据
+    df|pandas.Dataframe|因子数据
 
     - 返回
       - Dict 数据每列对应类型
